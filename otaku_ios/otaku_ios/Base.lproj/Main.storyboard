@@ -67,6 +67,52 @@
             </objects>
             <point key="canvasLocation" x="944.92753623188412" y="83.705357142857139"/>
         </scene>
+        <!--List Films View Controller-->
+        <scene sceneID="HkN-Q2-f0z">
+            <objects>
+                <viewController storyboardIdentifier="FILMSGALL" id="YHp-tk-9Dd" customClass="ListFilmsViewController" customModule="otaku_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HH7-mn-XfQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ST5-se-rdz">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ba2-Iy-9JX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ST5-se-rdz" firstAttribute="leading" secondItem="ba2-Iy-9JX" secondAttribute="leading" id="D7m-pe-JGk"/>
+                            <constraint firstItem="ba2-Iy-9JX" firstAttribute="trailing" secondItem="ST5-se-rdz" secondAttribute="trailing" id="ccH-oT-K2Y"/>
+                            <constraint firstItem="ST5-se-rdz" firstAttribute="top" secondItem="ba2-Iy-9JX" secondAttribute="top" id="fJO-sB-CzQ"/>
+                            <constraint firstItem="ba2-Iy-9JX" firstAttribute="bottom" secondItem="ST5-se-rdz" secondAttribute="bottom" id="oGH-m6-MnU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mZ5-k8-DF7"/>
+                    <connections>
+                        <outlet property="filmsTable" destination="ST5-se-rdz" id="eru-ev-Oun"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SPd-uj-vuo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2710.144927536232" y="98.4375"/>
+        </scene>
+        <!--Infos View Controller-->
+        <scene sceneID="Vsn-wp-Pjm">
+            <objects>
+                <viewController storyboardIdentifier="FILMINFOS" id="NEX-UX-LiC" customClass="InfosViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L4B-gg-Goh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Wt7-FS-U1S"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VbX-Bv-MDW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3599" y="106"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="GXh-30-eTG">
             <objects>
@@ -84,6 +130,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MPv-gd-Vxq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="34.782608695652179" y="83.705357142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xkD-wP-2po">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wVv-dv-k53" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="avG-3w-rFV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YHp-tk-9Dd" kind="relationship" relationship="rootViewController" id="LKU-wf-Esh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s38-vE-bql" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1800.0000000000002" y="98.4375"/>
         </scene>
     </scenes>
     <resources>

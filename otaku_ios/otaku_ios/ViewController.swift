@@ -26,6 +26,10 @@ class ViewController: UIViewController {
 
 
     @IBAction func goToFilms(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "FILMSGALL")
+        
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }
