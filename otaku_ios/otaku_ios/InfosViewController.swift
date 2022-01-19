@@ -28,6 +28,8 @@ class InfosViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = movie?.original_title_romanised
 
         peopleTable.dataSource = self
         peopleTable.delegate = self

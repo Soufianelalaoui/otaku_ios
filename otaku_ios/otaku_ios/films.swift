@@ -11,6 +11,7 @@ struct GhibliResponse: Codable {
     let id: String?
     let title: String?
     let original_title: String?
+    let original_title_romanised: String?
     let image: String?
     let movie_banner: String?
     let description: String?

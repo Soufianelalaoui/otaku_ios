@@ -16,7 +16,7 @@ class ListFilmsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Otaku"
+        self.title = "Ghibli Films"
         
         filmsTable.dataSource = self
         filmsTable.delegate = self
