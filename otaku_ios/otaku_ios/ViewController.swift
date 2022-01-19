@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         self.title = "Otaku"
         
         titleLabel.textColor = .red
-        titleLabel.text = "Welcome to your ghibli's film"
+        titleLabel.text = "Welcome to your ghibli films"
     }
 
 

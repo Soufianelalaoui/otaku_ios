@@ -49,9 +49,12 @@ extension ListFilmsViewController: UITableViewDelegate {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "FILMINFOS")
+        let vc = storyboard.instantiateViewController(withIdentifier: "FILMINFOS") as? InfosViewController
+        vc?.movie = datasource[indexPath.row]
         
-        self.navigationController?.pushViewController(vc, animated: true)
+        if let vc = vc {
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }
 
