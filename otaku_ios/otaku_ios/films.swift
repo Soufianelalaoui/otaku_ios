@@ -37,3 +37,14 @@ struct People: Codable {
     let species: String?
     let url: String?
 }
+
+struct Location: Codable {
+    let id: String?
+    let name: String?
+    let climate: String?
+    let terrain: String?
+    let surface_water: String?
+    let residents: [String]?
+    let films: [String]?
+    let url: String?
+}

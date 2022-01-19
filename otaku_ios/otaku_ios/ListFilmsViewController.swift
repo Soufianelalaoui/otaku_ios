@@ -38,7 +38,7 @@ class ListFilmsViewController: UIViewController {
                     self.filmsTable.reloadData()
                     case .failure(let aferror) :
                         print(aferror.localizedDescription)
-                    }
+            }
         }
     }
 }
@@ -74,14 +74,15 @@ extension ListFilmsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let movies = datasource[indexPath.row]
-        let cell =  UITableViewCell()
-        cell.textLabel?.text = movies.title
+        let cell = tableView.dequeueReusableCell(withIdentifier: "filmItem", for: indexPath) as? FilmTableViewCell
+        cell?.titleLabel?.text = movies.title
+        cell?.titleNameLabel?.text = movies.original_title
         let url = URL(string: movies.image ?? "https://static.boredpanda.com/blog/wp-content/uploads/2016/06/download-free-studio-ghibli-wallpapers-miyazaki-anime-27-5761220e70f13__880.jpg")
         if let url = url {
-            cell.imageView?.kf.setImage(with:url)
+            cell?.filmImage?.kf.setImage(with:url)
         }
         
-        return cell
+        return cell ?? UITableViewCell()
     }
     
     

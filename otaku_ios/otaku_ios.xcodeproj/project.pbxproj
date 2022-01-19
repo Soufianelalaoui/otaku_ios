@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E29803BE2798548200FCF07D /* FilmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29803BD2798548200FCF07D /* FilmTableViewCell.swift */; };
+		E29803C0279857E500FCF07D /* ActorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29803BF279857E500FCF07D /* ActorTableViewCell.swift */; };
+		E29803C227985BA400FCF07D /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29803C127985BA400FCF07D /* LocationTableViewCell.swift */; };
 		E2C72EA52796CE3100C31E0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C72EA42796CE3100C31E0E /* AppDelegate.swift */; };
 		E2C72EA72796CE3100C31E0E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C72EA62796CE3100C31E0E /* SceneDelegate.swift */; };
 		E2C72EA92796CE3100C31E0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C72EA82796CE3100C31E0E /* ViewController.swift */; };
@@ -21,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E29803BD2798548200FCF07D /* FilmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmTableViewCell.swift; sourceTree = "<group>"; };
+		E29803BF279857E500FCF07D /* ActorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorTableViewCell.swift; sourceTree = "<group>"; };
+		E29803C127985BA400FCF07D /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
 		E2C72EA12796CE3100C31E0E /* otaku_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = otaku_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2C72EA42796CE3100C31E0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2C72EA62796CE3100C31E0E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +82,9 @@
 				E2C72EB82796F33600C31E0E /* ListFilmsViewController.swift */,
 				E2C72EBA2796F94B00C31E0E /* InfosViewController.swift */,
 				E2C72EBC2796FB6200C31E0E /* films.swift */,
+				E29803BD2798548200FCF07D /* FilmTableViewCell.swift */,
+				E29803BF279857E500FCF07D /* ActorTableViewCell.swift */,
+				E29803C127985BA400FCF07D /* LocationTableViewCell.swift */,
 			);
 			path = otaku_ios;
 			sourceTree = "<group>";
@@ -159,12 +168,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E29803BE2798548200FCF07D /* FilmTableViewCell.swift in Sources */,
 				E2C72EBB2796F94B00C31E0E /* InfosViewController.swift in Sources */,
 				E2C72EBD2796FB6200C31E0E /* films.swift in Sources */,
+				E29803C227985BA400FCF07D /* LocationTableViewCell.swift in Sources */,
 				E2C72EA92796CE3100C31E0E /* ViewController.swift in Sources */,
 				E2C72EA52796CE3100C31E0E /* AppDelegate.swift in Sources */,
 				E2C72EB92796F33600C31E0E /* ListFilmsViewController.swift in Sources */,
 				E2C72EA72796CE3100C31E0E /* SceneDelegate.swift in Sources */,
+				E29803C0279857E500FCF07D /* ActorTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +325,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H3L2222BWN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = otaku_ios/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -325,7 +338,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ccm.otaku-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ccm.otaku-ios2022";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -340,6 +353,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H3L2222BWN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = otaku_ios/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -352,7 +366,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ccm.otaku-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ccm.otaku-ios2022";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
