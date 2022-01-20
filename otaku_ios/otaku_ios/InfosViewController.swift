@@ -53,7 +53,12 @@ class InfosViewController: UIViewController {
         descriptionLabel.textColor = .gray
         descriptionLabel.text = "Description: \(movie?.description ?? "Ghibli")"
         
-        if (movie?.people?.first?.hasSuffix("/people/") == false) {
+        guard let fpeople = movie?.people?.first , let flocation = movie?.locations?.first else {
+            return
+        }
+
+        
+        if (!fpeople.hasSuffix("/people/")) {
             let taskGroup = DispatchGroup()
             var actors: [People] = []
             
@@ -82,7 +87,7 @@ class InfosViewController: UIViewController {
         }
         
         
-        if (movie?.locations?.first?.hasSuffix("/locations/") == false) {
+        if (!flocation.hasSuffix("/locations/")) {
             let taskGroup = DispatchGroup()
             var locations: [Location] = []
             for url in movie?.locations ?? [] {

@@ -221,31 +221,26 @@
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEI-Mg-MPe">
                                                                             <rect key="frame" x="31" y="0.0" width="348" height="27"/>
                                                                             <constraints>
-                                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="348" id="ZLI-BQ-wE0"/>
+                                                                                <constraint firstAttribute="height" constant="27" id="9Si-xk-l4U"/>
                                                                             </constraints>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vrp-dO-DHe">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vrp-dO-DHe">
                                                                             <rect key="frame" x="93" y="29" width="301" height="23"/>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="301" id="IEe-WO-B2H"/>
-                                                                            </constraints>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                     </subviews>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="bottom" secondItem="yEI-Mg-MPe" secondAttribute="bottom" constant="35" id="02I-E2-N6P"/>
-                                                                        <constraint firstAttribute="trailing" secondItem="Vrp-dO-DHe" secondAttribute="trailing" constant="20" symbolic="YES" id="4Br-MA-a14"/>
-                                                                        <constraint firstItem="yEI-Mg-MPe" firstAttribute="top" secondItem="V3l-NK-pFF" secondAttribute="top" id="4f4-gz-88l"/>
-                                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yEI-Mg-MPe" secondAttribute="trailing" constant="20" symbolic="YES" id="OlQ-Re-kSa"/>
-                                                                        <constraint firstItem="yEI-Mg-MPe" firstAttribute="leading" secondItem="V3l-NK-pFF" secondAttribute="leading" constant="31" id="Run-Sy-8mw"/>
-                                                                        <constraint firstAttribute="bottom" secondItem="Vrp-dO-DHe" secondAttribute="bottom" constant="10" id="SYW-CI-2hU"/>
-                                                                        <constraint firstItem="Vrp-dO-DHe" firstAttribute="top" secondItem="V3l-NK-pFF" secondAttribute="top" constant="29" id="X6e-3N-pfL"/>
-                                                                        <constraint firstItem="Vrp-dO-DHe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="V3l-NK-pFF" secondAttribute="leading" constant="20" symbolic="YES" id="wJ4-Zm-I1k"/>
+                                                                        <constraint firstItem="Vrp-dO-DHe" firstAttribute="top" secondItem="yEI-Mg-MPe" secondAttribute="bottom" constant="2" id="5Oy-2S-bCG"/>
+                                                                        <constraint firstItem="yEI-Mg-MPe" firstAttribute="top" secondItem="V3l-NK-pFF" secondAttribute="topMargin" constant="-11" id="Uep-tM-ABw"/>
+                                                                        <constraint firstItem="yEI-Mg-MPe" firstAttribute="leading" secondItem="V3l-NK-pFF" secondAttribute="leadingMargin" constant="11" id="VCF-gQ-Cli"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="Vrp-dO-DHe" secondAttribute="trailing" constant="20" id="hDG-FL-uYb"/>
+                                                                        <constraint firstItem="Vrp-dO-DHe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="V3l-NK-pFF" secondAttribute="leading" constant="20" symbolic="YES" id="jFC-Eo-1nf"/>
+                                                                        <constraint firstAttribute="trailingMargin" secondItem="yEI-Mg-MPe" secondAttribute="trailing" constant="15" id="ztr-p4-0Zj"/>
                                                                     </constraints>
                                                                 </tableViewCellContentView>
                                                                 <connections>
